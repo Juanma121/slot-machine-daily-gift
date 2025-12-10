@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tragaperras - Sorpresa diaria para tu pareja</title>
-        <link rel="stylesheet" href="./styles/styles.css">
-    </head>
-    <body>
-        <main class="slot-app">
-            <h1 class="head-title">Máquina de detalles románticos</h1>
-            <section class="slot-machine">
-              <div class="slot-reel" id="slot-reel">
-                <span class="slot-result" id="slot-result">Pulsa la palanca para empezar</span>
-              </div>
-              <button class="slot-lever" id="slot-lever">Tira de la palanca</button>
-            </section>
-        </main>
-        <script type="module" src="./src/main.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tragaperras – Detalles para tu novia</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1 class="app-title">Máquina de detalles románticos</h1>
+
+    <section class="slot-machine">
+      <div class="slot-body">
+        <div class="slot-top">
+          <span class="slot-logo">💘 LOVE SLOTS 💘</span>
+        </div>
+
+        <div class="slot-lights">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="slot-screen">
+          <div class="slot-reel" id="slot-reel">
+            <span class="slot-result" id="slot-result">❓</span>
+          </div>
+        </div>
+
+        <div class="slot-lights">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="slot-bottom">
+          <span class="slot-price-description" id="slot-price-description">TIRA DE LA PALANCA</span>
+        </div>
+      </div>
+
+      <div class="slot-side">
+        <button id="slot-lever" class="slot-lever" type="button">
+          <span class="lever-stick"></span>
+          <span class="lever-ball"></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
 </html>

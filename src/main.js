@@ -1,5 +1,3 @@
-console.log('Iniciado')
-
 import { gifts } from "./data/gifts.js"
 import { Reel } from "./models/Reel.js"
 import { SlotMachine } from "./models/SlotMachine.js"
@@ -20,6 +18,7 @@ function startApp(){
     reelElementId: 'slot-reel',
     resultElementId: 'slot-result',
     leverButtonId: 'slot-lever',
+    descriptionPriceId: 'slot-price-description',
   })
 
   const uiController = new UiController(domBindings, slotMachine)

@@ -4,16 +4,26 @@ export class UiController {
     this.slotMachine = slotMachine
   }
 
+  spinWithAnimation() {
+    if (!this.dom.leverButton || !this.dom.reelElement) return
+
+    this.dom.reelElement.classList.add('spinning')
+    this.dom.leverButton.disabled = true
+
+    setTimeout(() => {
+      const result = this.slotMachine.spin();
+      this.dom.resultElement.textContent = result.icon ?? '🚫'
+      this.dom.priceDescription.textContent = result.description ?? 'Algo se rompió'
+
+      this.dom.reelElement.classList.remove('spinning')
+      this.dom.leverButton.disabled = false
+    }, 500)
+  }
+
+
   init() {
-    this.dom.leverButton.addEventListener('click', ()=> {
-      const result = this.slotMachine.spin()
-
-      if (!result) {
-        this.dom.resultElement.textContent = 'No quedan detalles disponibles 😅';
-        return;
-      }
-
-      this.dom.resultElement.textContent = result.icon;
-    })
+    this.dom.leverButton.addEventListener('click', () => {
+      this.spinWithAnimation()
+    });
   }
 }
