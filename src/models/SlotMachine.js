@@ -1,6 +1,6 @@
 export class SlotMachine {
   constructor(reel, historyService) {
-    this.reel= reel
+    this.reel = reel
     this.historyService = historyService
   }
 
@@ -12,7 +12,7 @@ export class SlotMachine {
     }
 
     let used = this.historyService.getUsedGifts()
-    if (used.lenght >= allSymbols.lenght) {
+    if (used.length >= allSymbols.length) {
       this.historyService.resetUsedGifts()
       used = []
     }
@@ -25,7 +25,7 @@ export class SlotMachine {
       const candidate = this.reel.spin()
       spins +=1
 
-      if (candidate && !used.includes(candidate)) {
+      if (candidate && !used.includes(candidate.icon)) {
         result = candidate
       }
     }

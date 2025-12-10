@@ -18,8 +18,8 @@ export class HistoryService {
 
   addUsedGift(gift) {
     const current = this.getUsedGifts()
-    if (!current.includes(gift)) {
-      current.push(gift)
+    if (!current.includes(gift.icon)) {
+      current.push(gift.icon)
       localStorage.setItem(this.key, JSON.stringify(current))
     }
   }
