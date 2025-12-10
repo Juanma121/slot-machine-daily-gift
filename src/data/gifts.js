@@ -1,6 +1,6 @@
 export const gifts = [
   { icon: "💆‍♂️", description: "Masaje de espalda" },
-  { icon: "🍳", description: "Desayuno en la cama" },
+  { icon: "🥐", description: "Desayuno en la cama" },
   { icon: "💌", description: "Nota romantica escondida" },
   { icon: "🎬", description: "Película que escoja" },
   { icon: "💆", description: "Masaje de cabeza" },
