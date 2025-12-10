@@ -51,7 +51,11 @@ Una vez aparece un detalle, se guarda en localStorage para que no pueda volver a
     git clone https://github.com/tu-usuario/tragaperras-detalles.git
 2. Entra en la carpeta:
     cd tragaperras-detalles
-3. Simplemente abre index.html en tu navegador.
+3. Instalas Serve
+    npm install --save-dev serve
+3. Inicias el programa
+    npm start
+4. Entras en el localhost levantado, por ejemplo: http://localhost:3000/
 
 
 🛠️ Tecnologías utilizadas

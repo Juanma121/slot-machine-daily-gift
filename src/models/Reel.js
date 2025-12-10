@@ -1,9 +1,19 @@
+import { gifts } from "../data/gifts.js"
 export class Reel {
-  constructor(symbols = []) {
+  constructor(symbols = gifts) {
     this.symbols = symbols
   }
 
+  getAllSymbols() {
+    return this.symbols
+  }
+
   spin(){
-    //logica de giro
+    if (!this.symbols.length){
+      return null
+    }
+
+    const index = Math.floor(Math.random() * this.symbols.length)
+    return this.symbols[index]
   }
 }
