@@ -1,1 +1,9 @@
-console.log('Rodillo inicilaizado')
+export class Reel {
+  constructor(symbols = []) {
+    this.symbols = symbols
+  }
+
+  spin(){
+    //logica de giro
+  }
+}

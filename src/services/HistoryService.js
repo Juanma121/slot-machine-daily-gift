@@ -1,1 +1,5 @@
-console.log('Historial de detalles inicializados')
+export class historyService {
+  constructor(key = "slots-history") {
+    this.key = key
+  }
+}

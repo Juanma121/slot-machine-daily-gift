@@ -1,1 +1,5 @@
-console.log('DomBindings inicializado')
+export class DomBindigns {
+  constructor(){
+    // referencias al DOM
+  }
+}
