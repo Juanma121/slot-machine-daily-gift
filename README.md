@@ -35,24 +35,25 @@ Una vez aparece un detalle, se guarda en localStorage para que no pueda volver a
 │  ├─ /ui
 │  │   ├─ DomBindings.js    # Referencias al DOM
 │  │   └─ UiController.js   # Controlador visual y eventos de la UI
-└─ /styles
-   └─ styles.css            # Estilos y animaciones
+├─ /styles
+│   └─ styles.css           # Estilos y animaciones
+└─ /tests                   # Tests
 
 
 🚀 Requisitos
 
 - Navegador moderno compatible con ES Modules.
 - No necesita backend, solo abrir index.html.
+- Serve instalado
+    npm install --save-dev serve
 
 
 🧱 Instalación y ejecución
 
 1. Clona este repositorio:
-    git clone https://github.com/tu-usuario/tragaperras-detalles.git
+    git clone https://github.com/Juanma121/slot-machine-daily-gift.git
 2. Entra en la carpeta:
-    cd tragaperras-detalles
-3. Instalas Serve
-    npm install --save-dev serve
+    cd slot-machine-daily-gift
 3. Inicias el programa
     npm start
 4. Entras en el localhost levantado, por ejemplo: http://localhost:3000/
@@ -75,8 +76,7 @@ Una vez aparece un detalle, se guarda en localStorage para que no pueda volver a
 4. Si es válido:
     - Se guarda en localStorage mediante HistoryService.
     - Se muestra el detalle en pantalla.
-5. Cuando quedan pocos detalles, la máquina puede mostrar un mensaje especial o pedir reinicio.
-6. Se puede resetear manualmente los detalles disponibles en todo momento.
+5. Cuando no quedan detalles, la maquina se reinicia borrando el localStorage.
 
 
 🔧 Extensiones y mejoras futuras
@@ -86,6 +86,7 @@ Una vez aparece un detalle, se guarda en localStorage para que no pueda volver a
 - Sonidos al girar.
 - UI más parecida a una máquina real (SVG, imágenes, etc.).
 - Dark/Light mode.
+- Poder resetear el localStorage manualmente.
 
 
 🧑‍💻 Autor y propósito
