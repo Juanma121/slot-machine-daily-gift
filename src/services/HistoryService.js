@@ -1,0 +1,1 @@
+console.log('Historial de detalles inicializados')
