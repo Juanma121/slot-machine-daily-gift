@@ -16,11 +16,16 @@ export class HistoryService {
     }
   }
 
-  addUsedGift(gift) {
-    const current = this.getUsedGifts()
-    if (!current.includes(gift.icon)) {
-      current.push(gift.icon)
-      localStorage.setItem(this.key, JSON.stringify(current))
+  addUsedGift(icon) {
+    const current = this.getUsedGifts();
+
+    if (typeof icon !== 'string' || !icon) {
+      return;
+    }
+
+    if (!current.includes(icon)) {
+      current.push(icon);
+      localStorage.setItem(this.key, JSON.stringify(current));
     }
   }
 

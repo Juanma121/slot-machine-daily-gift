@@ -41,7 +41,7 @@ export class SlotMachine {
       result = fallback
     }
 
-    this.historyService.addUsedGift(result)
+    this.historyService.addUsedGift(result.icon)
     return result
   }
 }
