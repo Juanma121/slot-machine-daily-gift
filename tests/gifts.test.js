@@ -1,4 +1,4 @@
-import { gifts } from "../src/data/gifts";
+import { gifts } from "../src/data/gifts"
 
 describe('gifts dataset', () => {
   test('no empty', () => {
